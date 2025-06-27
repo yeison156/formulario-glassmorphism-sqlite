@@ -1,0 +1,94 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(-45deg, #1e3c72, #2a5298, #0f2027, #2c5364);
+  background-size: 400% 400%;
+  animation: moverFondo 15s ease infinite;
+}
+
+@keyframes moverFondo {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.contenedor {
+  width: 350px;
+  margin: 80px auto;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: rgba(255, 255, 255, 0.2); /* Más transparente */
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(15px);
+  text-align: center;
+  color: white;
+}
+
+.contenedor h2 {
+  margin-bottom: 25px;
+  font-weight: bold;
+}
+
+input {
+  width: 90%;
+  padding: 12px;
+  margin: 10px auto;
+  border: none;
+  border-radius: 10px;
+  background-color: rgba(255, 255, 255, 0.3);
+  color: #000;
+  font-size: 14px;
+}
+
+input::placeholder {
+  color: #555;
+}
+
+button {
+  width: 95%;
+  padding: 12px;
+  background-color: #fff;
+  color: #000;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 15px;
+}
+
+button:hover {
+  background-color: #00bcd4;
+  color: white;
+  transform: scale(1.05);
+}
+
+.redes-sociales {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-around;
+}
+
+.redes-sociales .btn {
+  width: 50px;
+  height: 50px;
+  background-color: rgba(255, 255, 255, 0.3);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 20px;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.redes-sociales .btn:hover {
+  background-color: white;
+  color: #333;
+  transform: rotate(10deg) scale(1.1);
+}
